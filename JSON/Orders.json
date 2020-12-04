@@ -1,25 +1,23 @@
+/* 1 */
 {
-	"username": "C1",
-	"orders": [
-		{
-			"items" : {
-				"5fc9dad919793cd160a94e18" : {
-				 "_id" : ObjectId("5fc9dad919793cd160a94e18"),
-			    "productID" : "1",
-			    "productName" : "Vanilla",
-			    "image" : "vanilla.jpg",
-			    "description" : "The classic.",
-			    "basePrice" : 1,
-			    "stock" : 42,
-			    "qty" : 1
-				}
-
-			},
-		"totalprice" : 1,
-		"time" : "12/4/2020 12:52:14 AM"
-
-		}
-	]
-
-
+    "_id" : ObjectId("5fc9e1ec19793cd160a9502f"),
+    "username" : "C1",
+    "orders" : [ 
+        {
+            "items" : {
+                "5fc9dad919793cd160a94e18" : {
+                    "_id" : ObjectId("5fc9dad919793cd160a94e18"),
+                    "productID" : "1",
+                    "productName" : "Vanilla",
+                    "image" : "vanilla.jpg",
+                    "description" : "The classic.",
+                    "basePrice" : 1,
+                    "stock" : 42,
+                    "qty" : 1
+                }
+            },
+            "totalprice" : 1,
+            "time" : "12/4/2020 12:52:14 AM"
+        }
+    ]
 }
