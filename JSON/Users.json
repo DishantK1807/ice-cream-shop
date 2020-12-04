@@ -1,0 +1,25 @@
+/* 1 */
+{
+    "_id" : ObjectId("5eb4bd3a6caf9172b1d6b870"),
+    "LoginID" : "A1",
+    "fName" : "Jane",
+    "lName" : "Doe",
+    "gender" : "female",
+    "email" : "123@abc.com",
+    "pass" : "123456",
+    "birthday" : "9-27-89",
+    "admin" : true
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("5eb4bdac6caf9172b1d6b894"),
+    "LoginID" : "C1",
+    "fName" : "John",
+    "lName" : "Smith",
+    "gender" : "male",
+    "email" : "456@abc.com",
+    "pass" : "abcdefg",
+    "birthday" : "6-13-01",
+    "admin" : false
+}
