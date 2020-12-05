@@ -25,8 +25,6 @@ router.get('/:id', function(req, res) {
 
 // update cart  :id should be dish id
 router.post('/:id', function(req, res){
-    // req.body.items.push();
-    // req.body.items.push({"dishname":"Shrimp Dumpling","price":10});
     console.log("update cart",req.body);
     var collection = db.get('Cart');
     collection.update({

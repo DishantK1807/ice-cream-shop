@@ -14,45 +14,45 @@ router.get('/', function(req, res) {
 router.post('/', function(req, res){
     var collection = db.get('Menu');
     collection.insert({
-        name: req.body.name,
-        class: req.body.class,
-        picture: req.body.picture,
-        price: req.body.price,
-        stock: req.body.stock,
-        description: req.body.description
+        productID: req.body.productID,
+        productName: req.body.name,
+        image: req.body.image,
+        description: req.body.description,
+        basePrice: req.body.price,
+        stock: req.body.stock
     }, function(err, dish){
         if (err) throw err;
         res.json(dish);
     });
 });
 
-// Edit dish
+// Edit entry
 router.get('/:id', function(req, res) {
     var collection = db.get('Menu');
-    collection.findOne({ _id: req.params.id }, function(err, dish){
+    collection.findOne({ _id: req.params.id }, function(err, entry){
         if (err) throw err;
 
-        res.json(dish);
+        res.json(entry);
     });
 });
 
-// update dish
+// update entry
 router.put('/:id', function(req, res){
     var collection = db.get('Menu');
     collection.update({
             _id: req.params.id
         },
         {
-            name: req.body.name,
-            class: req.body.class,
-            picture: req.body.picture,
-            price: req.body.price,
-            stock: req.body.stock,
-            description: req.body.description
-        }, function(err, dish){
+            productID: req.body.productID,
+            productName: req.body.name,
+            image: req.body.image,
+            description: req.body.description,
+            basePrice: req.body.price,
+            stock: req.body.stock
+        }, function(err, entry){
             if (err) throw err;
 
-            res.json(dish);
+            res.json(entry);
         });
 });
 
@@ -62,16 +62,16 @@ router.post('/:id', function(req, res){
             _id: req.params.id
         },
         {
-            name: req.body.name,
-            class: req.body.class,
-            picture: req.body.picture,
-            price: req.body.price,
-            stock: req.body.stock,
-            description: req.body.description
-        }, function(err, dish){
+            productID: req.body.productID,
+            productName: req.body.name,
+            image: req.body.image,
+            description: req.body.description,
+            basePrice: req.body.price,
+            stock: req.body.stock
+        }, function(err, entry){
             if (err) throw err;
 
-            res.json(dish);
+            res.json(entry);
         });
 });
 

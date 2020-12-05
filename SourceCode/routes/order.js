@@ -4,7 +4,7 @@ var router = express();
 var monk = require('monk');
 var db = monk('localhost:27017/finalproject');
 router.get('/', function(req, res) {
-    var collection = db.get('Order');
+    var collection = db.get('Orders');
     collection.find({}, function(err, order){
         if (err) throw err;
         res.json(order);
@@ -14,7 +14,7 @@ router.get('/', function(req, res) {
 // update cart  :id should be dish id
 router.post('/:id', function(req, res){
     console.log("update order");
-    var collection = db.get('Order');
+    var collection = db.get('Orders');
     collection.update({
             _id: req.params.id
         },
